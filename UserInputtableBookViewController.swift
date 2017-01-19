@@ -73,7 +73,7 @@ extension UserInputtableBookViewController where Self: UIViewController {
         }
     }
     
-    func handleTextFieldShouldReturn(_ textField: UITextField) {
+    func handleTextFieldReturn(_ textField: UITextField) {
         if let textFieldIndex = textFields.index(of: textField) {
             if textFieldIndex == textFields.count - 1 {
                 submitBookOrShowAlert()	
